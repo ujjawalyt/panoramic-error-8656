@@ -1,0 +1,46 @@
+
+Create Admin  table;
+
+mysql> create table Admin(
+    -> Admin_Id int primary key auto_increment,
+    -> Admin_name varchar(20) not null,
+    -> Admin_username varchar(20) not null,
+    -> Admin_password varchar(10) not null
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+Create a table of Department;
+mysql> create table Department(
+    -> Department_Id int Primary Key auto_Increment,
+    -> Department_name varchar(25) NOT NULL,
+    -> Department_code varchar(5) UNIQUE,
+    -> Department_location varchar(20) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+
+Create a table of employee;
+mysql> create table employee(
+    -> employee_Id int primary key Auto_Increment,
+    -> employee_name varchar(25) not null,
+    -> employee_username varchar(20) unique not null,
+    -> employee_password varchar(10) not null,
+    -> employee_Address varchar(30),
+    -> employee_mobile varchar(10) not null,
+    -> employee_email varchar(35) not null,
+    -> employee_Department_Id int,
+    -> employee_salary int not null,
+    -> foreign key(employee_Department_Id ) references Department(department_Id)
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+
+Create table EmployeeLeave;
+ create table EmployeeLeave(
+    -> employee_Id int Unique,
+    -> Leave_No int
+    -> Available_Leave int not null,
+    -> Leave_Status varchar(20)
+    -> );
+
+
