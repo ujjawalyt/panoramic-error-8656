@@ -1,3 +1,0 @@
-create database human_resource_management_system;
-
-use human_resource_management_system;
