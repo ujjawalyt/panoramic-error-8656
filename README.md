@@ -1,3 +1,10 @@
-# panoramic-error-8656
+# Human-Resource-Management-System
 
-Human resource management system is an online business management applications which basically used for managing employees, management works.
+# Tech Stack :
+Java| Spring Boot
+| MySQL
+
+# Description 
+Human resource management system is an online business management applications which basically used for managing employees, management works.This application is created by the java language. You can perform operation like adding employee deleting employee and all other operation related to the HR department.
+
+
