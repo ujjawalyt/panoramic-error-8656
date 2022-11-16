@@ -3,7 +3,7 @@
 
 # Tech Stack :
 - Java
-- Jdbs
+- Jdbc
 - MySQL
 
 
